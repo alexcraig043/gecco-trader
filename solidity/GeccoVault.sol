@@ -11,7 +11,7 @@ contract GeccoVault {
     constructor(address _ownerA, address _ownerB) payable {
         ownerA = _ownerA;
         ownerB = _ownerB;
-        initialValue = msg.value;  // Setting the initial value
+        initialValue = msg.value;
     }
 
     function transactWithVault(uint256 amount) external payable {
